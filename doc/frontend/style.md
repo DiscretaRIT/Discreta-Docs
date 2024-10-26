@@ -12,10 +12,11 @@ The Component's filename must match with the component name itself.
 Eg:
 ```jsx
 const BaseComponent = () => {
-    return 
-    <>
-        <h1> Hello World! </h1>
-    </>
+    return (
+        <>
+            <h1> Hello World! </h1>
+        </>
+    )
 }
 
 export default BaseComponent
@@ -26,12 +27,13 @@ A component should be made if a particular part of your UI is re-used more than 
 Eg:
 ```jsx
 const TitleBar = ({ title }) => {
-    return 
-    <>
-        <div>
-            <h1> {title} </h1>
-        </div>
-    </>
+    return (
+        <>
+            <div>
+                <h1> {title} </h1>
+            </div>
+        </>
+    )
 }
 
 export default TitleBar
@@ -45,11 +47,12 @@ A component has to be made within a `.jsx` file **only**. Do not use a `.js` fil
 // Put your imports here.
 
 const ComponentExample = (props) => {
-    return 
-    <>
-        <div>
-        </div>
-    </>
+    return (
+        <>
+            <div>
+            </div>
+        </>
+    )
 }
 
 export default ComponentExample
@@ -58,10 +61,11 @@ export default ComponentExample
 Always start your component's return with an empty tag. This is to make sure that adding new children doesn't need a full refactor of the entire component structure.
 ```jsx
 const HomePage = () => {
-    return 
-    <>
-        <h1> Hello World! </h1>
-    </>
+    return (
+        <>
+            <h1> Hello World! </h1>
+        </>
+    )
 }
 ```
 
@@ -92,10 +96,11 @@ Images must be imported in the javascript and not used as a filepath source.
 import { IconExample } from "./icon.png"
 
 const ImageComponent = () => {
-    return
-    <>
-        <img src={IconExample} alt="Icon Example"/>
-    </>
+    return (
+        <>
+            <img src={IconExample} alt="Icon Example"/>
+        </>
+    )
 }
 
 export default ImageComponent
@@ -111,10 +116,11 @@ CSS of a component must be named the same as the component's file itself.
 import "BaseComponent.css"
 
 const BaseComponent = () => {
-    return
-    <>
-        <h1> Hello World! </h1>
-    </>
+    return (
+        <>
+            <h1> Hello World! </h1>
+        </>
+    )
 }
 
 export default BaseComponent
@@ -135,10 +141,11 @@ import { useState } from "react"
 const UseStateExample = () => {
     const [stateVar, setStateVar] = useState(true)
 
-    return 
-    <>
-        <h1> {stateVar} </h1>
-    </>
+    return (
+        <>
+            <h1> {stateVar} </h1>
+        </>
+    )
 }
 
 export default UseStateExample
