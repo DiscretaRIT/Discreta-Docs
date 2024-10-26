@@ -1,0 +1,6 @@
+[book]
+authors = ["sathya-pramodh"]
+language = "en"
+multilingual = false
+src = "doc"
+title = "Discreta Documentation"
